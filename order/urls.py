@@ -1,10 +1,10 @@
 from django.urls import path, include
-from rest_framework import routes
+from rest_framework import routers
 
 from order import viewsets
 
 
-router = routes.SimpleRouter()
+router = routers.SimpleRouter()
 router.register(r"order", viewsets.OrderViewSet, basename="order")
 
 
