@@ -1,4 +1,5 @@
 import os
 
-dir_path = os.path.dirname(os.path.realpath(__file__))
-print(dir_path)
+for dirpath, dirnames, filenames in os.walk("."):
+    for f in filenames:
+        print(os.path.join(dirpath, f))
