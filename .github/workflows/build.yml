@@ -4,12 +4,23 @@ on: [push]
 
 jobs:
   build:
+    environment: secrets
     strategy:
       fail-fast: false
       matrix:
-        python-version: [3.8, 3.9]
+        python-version: [3.8]
         poetry-version: [1.2.0]
 
+    env:
+      DEBUG: ${{secrets.DEBUG}}
+      SECRET_KEY: ${{secrets.SECRET_KEY}}
+      DJANGO_ALLOWED_HOSTS: ${{secrets.DJANGO_ALLOWED_HOSTS}}
+      SQL_ENGINE: ${{secrets.SQL_ENGINE}}
+      SQL_DATABASE: ${{secrets.SQL_DATABASE}}
+      SQL_USER: ${{secrets.SQL_USER}}
+      SQL_PASSWORD: ${{secrets.SQL_PASSWORD}}
+      SQL_HOST: ${{secrets.SQL_HOST}}
+      SQL_PORT: ${{secrets.SQL_PORT}}
     runs-on: ubuntu-latest
 
     steps:
