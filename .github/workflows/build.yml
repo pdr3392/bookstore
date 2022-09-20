@@ -32,6 +32,10 @@ jobs:
         shell: bash
         run: python -m poetry install
 
+      - name: Test dependencies
+        shell: bash
+        run: poetry run python test_dependencies.py
+
       - name: Test
         run: |
           poetry run python manage.py test
