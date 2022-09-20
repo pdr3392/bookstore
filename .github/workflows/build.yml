@@ -11,14 +11,14 @@ jobs:
         poetry-version: [1.2.0]
 
     env:
-      SECRET_KEY: ${{secret.SECRET_KEY}}
-      DJANGO_ALLOWED_HOSTS: ${{secret.SQL_DJANGO_ALLOWED_HOSTS}}
-      SQL_ENGINE: ${{secret.SQL_ENGINE}}
-      SQL_DATABASE: ${{secret.SQL_DATABASE}}
-      SQL_USER: ${{secret.SQL_USER}}
-      SQL_PASSWORD: ${{secret.SQL_PASSWORD}}
-      SQL_HOST: ${{secret.SQL_HOST}}
-      SQL_PORT: ${{secret.SQL_PORT}}
+      SECRET_KEY: ${{secrets.SECRETs_KEY}}
+      DJANGO_ALLOWED_HOSTS: ${{secrets.SQL_DJANGO_ALLOWED_HOSTS}}
+      SQL_ENGINE: ${{secrets.SQL_ENGINE}}
+      SQL_DATABASE: ${{secrets.SQL_DATABASE}}
+      SQL_USER: ${{secrets.SQL_USER}}
+      SQL_PASSWORD: ${{secrets.SQL_PASSWORD}}
+      SQL_HOST: ${{secrets.SQL_HOST}}
+      SQL_PORT: ${{secrets.SQL_PORT}}
     runs-on: ubuntu-latest
 
     steps:
