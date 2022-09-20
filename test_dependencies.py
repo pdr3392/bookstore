@@ -1,3 +1,3 @@
 import os
 
-print(os.environ.get("DJANGO_ALLOWED_HOSTS"))
+dir_path = os.path.dirname(os.path.realpath(__file__))
