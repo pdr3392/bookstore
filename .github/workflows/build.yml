@@ -28,6 +28,9 @@ jobs:
       - name: View poetry --help
         run: poetry --help
 
+      - name: Test ENV
+        run: echo "${{ secret.DJANGO_ALLOWED_HOSTS }}"
+
       - name: Install dependencies
         shell: bash
         run: python -m poetry install
