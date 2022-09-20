@@ -11,6 +11,7 @@ jobs:
         poetry-version: [1.2.0]
 
     env:
+      DEBUG: ${{secrets.DEBUG}}
       SECRET_KEY: ${{secrets.SECRETs_KEY}}
       DJANGO_ALLOWED_HOSTS: ${{secrets.SQL_DJANGO_ALLOWED_HOSTS}}
       SQL_ENGINE: ${{secrets.SQL_ENGINE}}
