@@ -27,6 +27,8 @@ jobs:
           python -m pip install poetry
       - name: View poetry --help
         run: poetry --help
+        env:
+          POETRY_VIRTUALENVS_CREATE: false
 
       - name: Install dependencies
         shell: bash
@@ -35,13 +37,3 @@ jobs:
       - name: Test
         run: |
           poetry run python manage.py test
-        env:
-          DEBUG: 1
-          SECRET_KEY: django-insecure-sycypm_*o2g*eez5cyd1dst&5thgp*+z0^l7kl-v(#s*l5xsme
-          DJANGO_ALLOWED_HOSTS: localhost 127.0.0.1 [::1]
-          SQL_ENGINE: django.db.backends.postgresql
-          SQL_DATABASE: bookstore_dev_db
-          SQL_USER: bookstore_dev
-          SQL_PASSWORD: bookstore_dev
-          SQL_HOST: db
-          SQL_PORT: 5432
