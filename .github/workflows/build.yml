@@ -4,6 +4,7 @@ on: [push]
 
 jobs:
   build:
+    environment: secrets
     strategy:
       fail-fast: false
       matrix:
