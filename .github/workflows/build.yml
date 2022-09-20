@@ -22,6 +22,8 @@ jobs:
 
       - name: Install Poetry
         uses: snok/install-poetry@v1
+        with:
+          virtualenvs-path: ./env.dev
 
       - name: View poetry --help
         run: poetry --help
