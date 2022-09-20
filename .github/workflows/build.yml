@@ -40,9 +40,4 @@ jobs:
         run: |
           poetry run python manage.py test
         env:
-          SQL_ENGINE: ${{ secrets.SQL_ENGINE }}
-          SQL_DATABASE: ${{ secrets.SQL_DATABASE }}
-          SQL_USER: ${{ secrets.SQL_USER }}
-          SQL_PASSWORD: ${{ secrets.SQL_PASSWORD }}
-          SQL_HOST: ${{ secrets.SQL_HOST }}
-          SQL_PORT: ${{ secrets.SQL_PORT }}
+          DJANGO_ALLOWED_HOSTS: localhost 127.0.0.1 [::1]
