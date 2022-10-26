@@ -27,8 +27,6 @@ ALLOWED_HOSTS = [
     "localhost",
     "127.0.0.1",
     "bookstorepdr3392.herokuapp.com",
-    "https://bookstorepdr3392.herokuapp.com",
-    "https://*.bookstorepdr3392.herokuapp.com",
     "bookstorepdr3392.herokuapp.com",
 ]
 
