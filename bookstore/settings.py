@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     "product",
     "rest_framework",
     "debug_toolbar",
+    "drf_yasg",
     "rest_framework.authtoken",
 ]
 
