@@ -157,3 +157,5 @@ INTERNAL_IPS = [
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 STATIC_ROOT = BASE_DIR / "staticfiles"
+
+CSRF_TRUSTED_ORIGINS = ["https://bookstorepdr3392.herokuapp.com/"]
