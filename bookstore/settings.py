@@ -26,6 +26,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     "http://127.0.0.1",
     "https://bookstorepdr3392.herokuapp.com",
+    "bookstorepdr3392.herokuapp.com",
 ]
 
 
@@ -39,12 +40,12 @@ INSTALLED_APPS = [
     "django.contrib.messages",
     "django.contrib.staticfiles",
     "django_extensions",
+    "rest_framework",
+    "rest_framework.authtoken",
     "order",
     "product",
-    "rest_framework",
     "debug_toolbar",
     "drf_yasg",
-    "rest_framework.authtoken",
 ]
 
 MIDDLEWARE = [
