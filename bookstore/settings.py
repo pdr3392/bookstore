@@ -28,6 +28,8 @@ ALLOWED_HOSTS = [
     "127.0.0.1",
     "bookstorepdr3392.herokuapp.com",
     "https://bookstorepdr3392.herokuapp.com",
+    "https://*.bookstorepdr3392.herokuapp.com",
+    "bookstorepdr3392.herokuapp.com",
 ]
 
 
@@ -158,4 +160,8 @@ STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 
 STATIC_ROOT = BASE_DIR / "staticfiles"
 
-CSRF_TRUSTED_ORIGINS = ["https://bookstorepdr3392.herokuapp.com/"]
+CSRF_TRUSTED_ORIGINS = [
+    "https://*.bookstorepdr3392.herokuapp.com",
+    "https://bookstorepdr3392.herokuapp.com",
+    "localhost",
+]
