@@ -28,6 +28,7 @@ schema_view = get_schema_view(
         description="Bookstore Docs",
         contact=openapi.Contact(email="phrcorreia3392@gmail.com"),
     ),
+    url="https://bookstorepdr3392.herokuapp.com/api-token-auth/",
     public=True,
     permission_classes=(permissions.AllowAny,),
 )
