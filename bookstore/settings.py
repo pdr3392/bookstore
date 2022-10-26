@@ -24,10 +24,8 @@ SECRET_KEY = "django-insecure-f*k@=53bc5!shef1-6w+m$-g)kspbaljz%8k4(j7iuc-u2_dyd
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    "localhost",
-    "127.0.0.1",
-    "bookstorepdr3392.herokuapp.com",
-    "bookstorepdr3392.herokuapp.com",
+    "http://127.0.0.1",
+    "https://bookstorepdr3392.herokuapp.com",
 ]
 
 
