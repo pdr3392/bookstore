@@ -1,5 +1,7 @@
 # Bookstore
 
+Deploy url: https://bookstorepdr3392.herokuapp.com/
+
 Bookstore APP from Backend Python course from EBAC
 
 ## Prerequisites
